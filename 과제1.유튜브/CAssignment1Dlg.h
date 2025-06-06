@@ -18,12 +18,13 @@
 #pragma once
 
 #include "CCanvasDialog.h"
+#include "resource.h"
 
-class C과제1유튜브Dlg : public CDialogEx
+class CAssignment1Dlg : public CDialogEx
 {
 public:
-	C과제1유튜브Dlg(CWnd* pParent = nullptr);
-	virtual ~C과제1유튜브Dlg();	
+	CAssignment1Dlg(CWnd* pParent = nullptr);
+	virtual ~CAssignment1Dlg();
 	virtual BOOL PreTranslateMessage(MSG* pMsg);
 	afx_msg void OnBnClickedExitBtn();
 	afx_msg BOOL OnEraseBkgnd(CDC* pDC);	

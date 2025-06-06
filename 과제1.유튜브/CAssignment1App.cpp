@@ -17,25 +17,25 @@
 
 #include "pch.h"
 #include "framework.h"
-#include "과제1.유튜브.h"
-#include "과제1.유튜브Dlg.h"
+#include "CAssignment1App.h"
+#include "CAssignment1Dlg.h"
 #include "MISC_GUI_UTIL.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
 
-BEGIN_MESSAGE_MAP(C과제1유튜브App, CWinApp)
+BEGIN_MESSAGE_MAP(CAssignment1App, CWinApp)
 	ON_COMMAND(ID_HELP, &CWinApp::OnHelp)
 END_MESSAGE_MAP()
 
-C과제1유튜브App theApp;
+CAssignment1App theApp;
 
-C과제1유튜브App::C과제1유튜브App()
+CAssignment1App::CAssignment1App()
 {
 }
 
-BOOL C과제1유튜브App::InitInstance()
+BOOL CAssignment1App::InitInstance()
 {
 	CWinApp::InitInstance();
 
@@ -44,9 +44,9 @@ BOOL C과제1유튜브App::InitInstance()
 
 	if (misc_gui_util_init())
 	{
-		C과제1유튜브Dlg* dlg;
+		CAssignment1Dlg* dlg;
 
-		dlg = new C과제1유튜브Dlg;
+		dlg = new CAssignment1Dlg;
 
 		if (!dlg)
 		{
