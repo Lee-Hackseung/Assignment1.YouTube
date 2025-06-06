@@ -51,7 +51,7 @@ ex) CDC, wingid, gdiplus 등의 원 그리기 API
         2-3. 직사각형 넓이 구하기
         2-4. 빈 배열에 추가, 삭제하기
 
-![applyinfo_b](https://github.com/user-attachments/assets/f8a8335d-4ac3-4667-8663-cab2579ccdd1)
+![applyinfo](https://github.com/user-attachments/assets/73275491-1ec0-4b53-8d27-b45f2bbaab1d)
 
             
             
