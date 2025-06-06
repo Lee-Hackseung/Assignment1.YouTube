@@ -17,8 +17,7 @@
 
 #include "pch.h"
 #include "framework.h"
-#include "과제1.유튜브.h"
-#include "과제1.유튜브Dlg.h"
+#include "CAssignment1Dlg.h"
 #include "afxdialogex.h"
 
 #define CLICKED_CIRCLE_RADIUS_DEFAULT 3
@@ -31,14 +30,14 @@
 #endif
 
 
-C과제1유튜브Dlg::C과제1유튜브Dlg(CWnd* pParent /*=nullptr*/)
+CAssignment1Dlg::CAssignment1Dlg(CWnd* pParent /*=nullptr*/)
 	: CDialogEx(IDD_APP_DIALOG, pParent)
 {
 	canvasDialog = nullptr;
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
 
-C과제1유튜브Dlg::~C과제1유튜브Dlg()
+CAssignment1Dlg::~CAssignment1Dlg()
 {
 	if (canvasDialog)
 	{
@@ -47,7 +46,7 @@ C과제1유튜브Dlg::~C과제1유튜브Dlg()
 	}
 }
 
-void C과제1유튜브Dlg::DoDataExchange(CDataExchange* pDX)
+void CAssignment1Dlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
 	DDX_Control(pDX, IDC_EXIT_BTN, exitBtn);
@@ -55,19 +54,19 @@ void C과제1유튜브Dlg::DoDataExchange(CDataExchange* pDX)
 	DDX_Control(pDX, IDC_CIRCLE_TH_COMBO, circleThCombo);
 }
 
-BEGIN_MESSAGE_MAP(C과제1유튜브Dlg, CDialogEx)
+BEGIN_MESSAGE_MAP(CAssignment1Dlg, CDialogEx)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()	
 	ON_WM_ERASEBKGND()
-	ON_BN_CLICKED(IDC_EXIT_BTN, &C과제1유튜브Dlg::OnBnClickedExitBtn)
-	ON_BN_CLICKED(IDC_INIT_MFCBUTTON, &C과제1유튜브Dlg::OnBnClickedInit)
-	ON_BN_CLICKED(IDC_RANDOM_MFCBUTTON, &C과제1유튜브Dlg::OnBnClickedRandomMove)
-	ON_CBN_SELCHANGE(IDC_CLICKED_CIRCLE_COMBO, &C과제1유튜브Dlg::OnCbnSelchangeClickedCircleRadiusCombo)
-	ON_CBN_SELCHANGE(IDC_CIRCLE_TH_COMBO, &C과제1유튜브Dlg::OnCbnSelchangeCircleThicknessCombo)
+	ON_BN_CLICKED(IDC_EXIT_BTN, &CAssignment1Dlg::OnBnClickedExitBtn)
+	ON_BN_CLICKED(IDC_INIT_MFCBUTTON, &CAssignment1Dlg::OnBnClickedInit)
+	ON_BN_CLICKED(IDC_RANDOM_MFCBUTTON, &CAssignment1Dlg::OnBnClickedRandomMove)
+	ON_CBN_SELCHANGE(IDC_CLICKED_CIRCLE_COMBO, &CAssignment1Dlg::OnCbnSelchangeClickedCircleRadiusCombo)
+	ON_CBN_SELCHANGE(IDC_CIRCLE_TH_COMBO, &CAssignment1Dlg::OnCbnSelchangeCircleThicknessCombo)
 END_MESSAGE_MAP()
 
 
-BOOL C과제1유튜브Dlg::OnInitDialog()
+BOOL CAssignment1Dlg::OnInitDialog()
 {
 	int screenWidth;
 	int screenHeight;	
@@ -93,13 +92,13 @@ BOOL C과제1유튜브Dlg::OnInitDialog()
 }
 
 // 종료 버튼 클릭 시 종료
-void C과제1유튜브Dlg::OnBnClickedExitBtn()
+void CAssignment1Dlg::OnBnClickedExitBtn()
 {
 	OnOK();
 }
 
 // 캔버스 다이얼로그 생성 및 위치 지정
-void C과제1유튜브Dlg::AttatchCanvas(CRect& parentRect)
+void CAssignment1Dlg::AttatchCanvas(CRect& parentRect)
 {
 	CRect canvaseRect;
 	int margin;	
@@ -118,7 +117,7 @@ void C과제1유튜브Dlg::AttatchCanvas(CRect& parentRect)
 }
 
 // 배경색 회색으로 채움
-BOOL C과제1유튜브Dlg::OnEraseBkgnd(CDC* pDC)
+BOOL CAssignment1Dlg::OnEraseBkgnd(CDC* pDC)
 {
 	CRect rect;
 
@@ -129,7 +128,7 @@ BOOL C과제1유튜브Dlg::OnEraseBkgnd(CDC* pDC)
 }
 
 // 콤보박스 항목 초기화 및 위치 조정
-void C과제1유튜브Dlg::InitCircleComboBox()
+void CAssignment1Dlg::InitCircleComboBox()
 {
 	CRect rect;
 
@@ -156,7 +155,7 @@ void C과제1유튜브Dlg::InitCircleComboBox()
 }
 
 // ESC/Enter 키 무시 처리
-BOOL C과제1유튜브Dlg::PreTranslateMessage(MSG* pMsg)
+BOOL CAssignment1Dlg::PreTranslateMessage(MSG* pMsg)
 {
 	if (WM_KEYDOWN == pMsg->message)
 	{
@@ -174,7 +173,7 @@ BOOL C과제1유튜브Dlg::PreTranslateMessage(MSG* pMsg)
 }
 
 // 초기화 버튼 처리
-void C과제1유튜브Dlg::OnBnClickedInit()
+void CAssignment1Dlg::OnBnClickedInit()
 {
 	if (canvasDialog != nullptr)
 	{
@@ -183,7 +182,7 @@ void C과제1유튜브Dlg::OnBnClickedInit()
 }
 
 // 랜덤 이동 버튼 처리
-void C과제1유튜브Dlg::OnBnClickedRandomMove()
+void CAssignment1Dlg::OnBnClickedRandomMove()
 {
 	if (canvasDialog != nullptr)
 	{
@@ -196,7 +195,7 @@ void C과제1유튜브Dlg::OnBnClickedRandomMove()
 }
 
 // 석택점 반지름 콤보 선택 변경 시 처리
-void C과제1유튜브Dlg::OnCbnSelchangeClickedCircleRadiusCombo()
+void CAssignment1Dlg::OnCbnSelchangeClickedCircleRadiusCombo()
 {
 	CString wstr;
 	int radius;
@@ -209,7 +208,7 @@ void C과제1유튜브Dlg::OnCbnSelchangeClickedCircleRadiusCombo()
 }
 
 // 정원 테두리 두께 콤보 선택 변경 시
-void C과제1유튜브Dlg::OnCbnSelchangeCircleThicknessCombo()
+void CAssignment1Dlg::OnCbnSelchangeCircleThicknessCombo()
 {
 	CString wstr;
 	int thickness;

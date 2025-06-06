@@ -4,7 +4,7 @@
 #include "pch.h"
 #include <mmsystem.h>
 #include <random>
-#include "과제1.유튜브.h"
+#include "CAssignment1Dlg.h"
 #include "afxdialogex.h"
 #include "CCanvasDialog.h"
 #include "MISC_GUI_UTIL.h"

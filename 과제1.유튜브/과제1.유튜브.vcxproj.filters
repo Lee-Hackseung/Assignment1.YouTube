@@ -27,7 +27,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="과제1.유튜브.h">
+    <ClInclude Include="CAssignment1App.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="framework.h">
@@ -48,12 +48,12 @@
     <ClInclude Include="CCanvasDialog.h">
       <Filter>헤더 파일\GUI</Filter>
     </ClInclude>
-    <ClInclude Include="과제1.유튜브Dlg.h">
+    <ClInclude Include="CAssignment1Dlg.h">
       <Filter>헤더 파일\GUI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="과제1.유튜브.cpp">
+    <ClCompile Include="CAssignment1App.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
@@ -65,7 +65,7 @@
     <ClCompile Include="MISC_GUI_UTIL.cpp">
       <Filter>소스 파일\UTIL</Filter>
     </ClCompile>
-    <ClCompile Include="과제1.유튜브Dlg.cpp">
+    <ClCompile Include="CAssignment1Dlg.cpp">
       <Filter>소스 파일\GUI</Filter>
     </ClCompile>
   </ItemGroup>

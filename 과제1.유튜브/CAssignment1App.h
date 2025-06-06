@@ -23,13 +23,13 @@
 
 #include "resource.h"
 
-class C과제1유튜브App : public CWinApp
+class CAssignment1App : public CWinApp
 {
 public:
-	C과제1유튜브App();
+	CAssignment1App();
 	virtual BOOL InitInstance();
 
 	DECLARE_MESSAGE_MAP()
 };
 
-extern C과제1유튜브App theApp;
+extern CAssignment1App theApp;
