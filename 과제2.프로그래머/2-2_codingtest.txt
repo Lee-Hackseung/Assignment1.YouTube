@@ -1,0 +1,23 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(vector<vector<int>> board, int k) {
+    int sum = 0;
+    int rows = board.size();
+    int cols = board[0].size();
+    
+    for (int i = 0; i < rows; ++i)
+    {
+        for (int j = 0; j < cols; ++j)
+        {
+            if (i + j <= k)
+            {
+                sum += board[i][j];
+            }
+        }
+    }
+
+    return sum;
+}

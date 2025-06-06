@@ -1,0 +1,29 @@
+#include <vector>
+using namespace std;
+
+vector<int> solution(vector<int> arr, vector<bool> flag)
+{
+    vector<int> vec;
+    int arr_size = arr.size();
+
+    for (int i = 0; i < arr_size; ++i)
+    {
+        int val = arr[i];
+
+        if (flag[i])
+        {
+            int add = val * 2;
+            
+            for (int j = 0; j < add; ++j)
+            {
+                vec.push_back(val);
+            }
+        } 
+        else
+        {
+            vec.erase(vec.end() - val, vec.end());
+        }
+    }
+
+    return vec;
+}

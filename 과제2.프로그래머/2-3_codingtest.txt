@@ -1,0 +1,23 @@
+#include <algorithm>
+using namespace std;
+
+int solution(vector<vector<int>> dots)
+{
+    int min_x = dots[0][0];
+    int min_y = dots[0][1];
+    int max_x = dots[0][0];    
+    int max_y = dots[0][1];
+
+    for (int i = 1; i < 4; ++i) {
+        int val1 = dots[i][0];
+        int val2 = dots[i][1];
+        
+        min_x = min(min_x, val1);
+        max_x = max(max_x, val1);
+        min_y = min(min_y, val2);
+        max_y = max(max_y, val2);
+    }
+
+    return (max_x - min_x) * (max_y - min_y);
+}
+
