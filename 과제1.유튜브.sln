@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36202.13 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "과제1.유튜브", "과제1.유튜브\과제1.유튜브.vcxproj", "{5A274167-61EB-212A-D128-1DE6A577289A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A274167-61EB-212A-D128-1DE6A577289A}.Debug|x64.ActiveCfg = Debug|x64
+		{5A274167-61EB-212A-D128-1DE6A577289A}.Debug|x64.Build.0 = Debug|x64
+		{5A274167-61EB-212A-D128-1DE6A577289A}.Debug|x86.ActiveCfg = Debug|x64
+		{5A274167-61EB-212A-D128-1DE6A577289A}.Release|x64.ActiveCfg = Release|x64
+		{5A274167-61EB-212A-D128-1DE6A577289A}.Release|x64.Build.0 = Release|x64
+		{5A274167-61EB-212A-D128-1DE6A577289A}.Release|x86.ActiveCfg = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B19C75CD-7354-4D46-83BA-5A3B25CF4891}
+	EndGlobalSection
+EndGlobal
