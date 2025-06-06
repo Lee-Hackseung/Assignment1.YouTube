@@ -42,14 +42,19 @@ ex) CDC, wingid, gdiplus 등의 원 그리기 API
     
 ![applyinfo_b](https://github.com/user-attachments/assets/d1bb6613-5b3e-47b7-a81b-003d8c45df41)
 
-
         2. 프로그래머스 과제
 
         아래의 과제진행 순서를 참고하여 4개 문제를 해결하고 9단계의 코드, 10단계의 스크린샷을 과제 1번 git 저장소 내에 폴더를 생성하여 저장하고 Push해 주시기 바랍니다.
-        2-1. 양꼬치
-        2-2. 이차원 배열 대각선 순회하기
-        2-3. 직사각형 넓이 구하기
-        2-4. 빈 배열에 추가, 삭제하기
+ 2-1 . ![양꼬치](https://school.programmers.co.kr/learn/courses/30/lessons/120830?language=cpp)
+
+
+ 2-2 . ![이차원 배열 대각선 순회하기](https://school.programmers.co.kr/learn/courses/30/lessons/181829?language=cpp)
+
+
+ 2-3 . ![직사각형 넓이 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/120860?language=cpp)
+
+
+ 2-4 . ![빈 배열에 추가, 삭제하기](https://school.programmers.co.kr/learn/courses/30/lessons/181860?language=cpp)
 
 ![applyinfo](https://github.com/user-attachments/assets/73275491-1ec0-4b53-8d27-b45f2bbaab1d)
 
